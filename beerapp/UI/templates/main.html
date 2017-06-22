@@ -1,0 +1,34 @@
+<div ng-include src="'UI/templates/header.html'"></div>
+
+<!-- Header -->
+<header>
+    <div class="container customcont" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-8 intro-text intro-dash text-left">
+                    <h1 class="name">Beer Information</h1>
+                    
+                   <div class="row">
+                   <div class="col-lg-12">             
+                   <p>Beer Name: <span>{{beerDetails.name}}</span></p>
+                   <p>Description: <span>{{beerDetails.description}}</span></p>
+                   <p>Alcohol Percentage: <span>{{beerDetails.alcoholPercent}}%</span></p>
+                   <p>Brewer Location: <span>{{beerDetails.breweryLocation}}</span></p>
+                    
+                    <br>
+                    <div id="success"></div>
+                   
+                    
+                
+            </div>
+        </div>                   
+                </div>
+                <div class="col-lg-4 intro-dash">
+                    <img class="img-responsive" src="UI/images/index-icon.png" alt="">
+                </div>
+                <div class="col-lg-8  text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

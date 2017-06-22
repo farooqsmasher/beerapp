@@ -1,0 +1,33 @@
+header .container.customcont{
+	padding-top:140px;
+	padding-bottom:10px;
+}
+.customconttt{
+	padding-top:140px;
+	
+}
+.intro-dash{
+	padding-top:60px;
+}
+.logo-padding{
+	padding-top:37px;
+}
+.cust-label{
+	font-size: 17px !important;
+	top:0px !important;
+	opacity: 1 !important;
+	color:#999999 !important;
+}
+.bgcolor input{
+	background: none !important;
+}
+.name {
+	font-size: 2.75em !important;
+	text-transform: none !important; 
+}
+.skills{
+	font-size: 1.35em !important;
+}
+.padding-bottom-50px{
+	padding-bottom:50px !important;
+}
