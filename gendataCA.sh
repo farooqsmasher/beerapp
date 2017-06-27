@@ -7,7 +7,7 @@ count=1
 
 > $2
 
-while [ $count -le $1 ]
+while [ $count -le  $1 ]
 do
 	##generates a random number to serve as a student number
     studentnumber=`od -A n -t d -N 1 /dev/urandom` 
@@ -27,21 +27,21 @@ do
     randomnumber=`od -A n -t d -N 1 /dev/urandom` 
     examscore=$(($randomnumber % 50))
 
-	finalscore = $ca1score + $ca2score + $examscore
+	finalscore=$($ca1score + $ca2score + $examscore)
 	
-    if [ $finalscore -lt 40 ]
+    if [ $finalscore -le 40 ]
     then 
         gradetype="Fail"
-    elif [ $finalscore -lt 50 ]
+    elif [ $finalscore -le 50 ]
     then
         gradetype="Pass"
-    elif [ $finalscore -lt 60 ]
+    elif [ $finalscore  -le 60 ]
     then
         gradetype="II-2"
-    elif [ $finalscore -lt 70 ]
+    elif [ $finalscore  -le 70 ]
     then
         gradetype="II-1"
-	elif [ $finalscore -le 100 ]
+	elif [ $finalscore  -le 100 ]
     then
         gradetype="I"
     fi
